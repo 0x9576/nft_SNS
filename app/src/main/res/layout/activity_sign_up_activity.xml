@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <EditText
+        android:id="@+id/nicknameText"
+        android:layout_width="230dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="닉네임 입력"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressCopyButton" />
+
+    <TextView
+        android:id="@+id/privateKeyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:text="개인키:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contentsText" />
+
+    <TextView
+        android:id="@+id/contentsText"
+        android:layout_width="373dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/black"
+        android:text="1. 개인키를 안전한 곳에 메모해 주세요. 해당 개인키는 귀하의 계정 내 모든 권한을 가질 수 있습니다.\n2. 닉네임 중복확인을 하셔야 회원가입이 가능합니다.\n3. KLAY가 없다면, 지갑 주소를 복사하고 하단의 'KLAY발급' 버튼을 눌러, 해당 링크에서 KLAY를 발급 받으시길 바랍니다.\n(테스트넷 한정)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:text="지갑주소:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privateKeyCopyButton" />
+
+    <Button
+        android:id="@+id/privateKeyCopyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:text="복사"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privateKeyTextView" />
+
+    <Button
+        android:id="@+id/addressCopyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:text="복사"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressTextView" />
+
+    <Button
+        android:id="@+id/faucatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/white"
+        android:text="KLAY발급"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nicknameText" />
+
+    <Button
+        android:id="@+id/completeSignUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/point"
+        android:text="회원가입 완료"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toEndOf="@+id/faucatButton"
+        app:layout_constraintTop_toBottomOf="@+id/nicknameText" />
+
+    <Button
+        android:id="@+id/nicknameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/point"
+        android:textColor="@color/white"
+        android:text="중복확인"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nicknameText"
+        app:layout_constraintTop_toBottomOf="@+id/addressCopyButton" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/completeSignUpButton"
+        app:layout_constraintVertical_bias="0.36"
+        app:srcCompat="@drawable/logomakree"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

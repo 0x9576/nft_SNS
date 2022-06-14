@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.stagram">
+
+    <application
+        android:name=".LoginInfo"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Stagram"
+        android:largeHeap="true">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".PostActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".NftInfoActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".SellActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".CreateGallery"
+            android:exported="true"/>
+        <activity
+            android:name=".GalleryInfoActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".AddWorkActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".DeleteWorkActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".FollowAddActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TicketBuyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FeedInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".tutorialActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WorkInfoActivity"
+            android:exported="true" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
